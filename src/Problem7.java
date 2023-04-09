@@ -1,6 +1,10 @@
 public class Problem7 {
+    // i - starting element index
+    // j - ending element index
+    // arr - array
+    // temp - local variable
+    // return - returns array elements in reverse order
     public static int[] reverseArray(int[] arr, int i, int j){
-        //Tail Recursion.
         if(i<j){
             int temp=arr[i];
             arr[i]=arr[j];
