@@ -1,7 +1,20 @@
 import java.util.Scanner;
 
 public class Main {
+    // n, k, a, b - input numbers
+    // arr - array
+    // s - string
     // userInput - to input the number of exercise
+    // min - minimum in the array
+    // average - average of array elements
+    // prime - checks is n is prime or composite
+    // factorial - factorial of n
+    // fibonacci - calculates n-th of term of fibonacci series
+    // power - calculates n to the power of a
+    //
+    // digit - checks that is string consist of all digits
+    // binomial - calculates the binomial coefficient of n and k
+    // gcd - calculates gcd of a and b
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String userInput = sc.next();
@@ -54,7 +67,13 @@ public class Main {
 
             }
             case "ex8" -> {
-
+                String s = sc.next();
+                boolean digit = Problem8.isAllDigits(s);
+                if (digit) {
+                    System.out.println("Yes");
+                }else {
+                    System.out.println("No");
+                }
             }
             case "ex9" -> {
                 int n = sc.nextInt();
