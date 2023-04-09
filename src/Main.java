@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -64,7 +65,12 @@ public class Main {
                 System.out.println(power);
             }
             case "ex7" -> {
-
+                int n = sc.nextInt();
+                int[] arr = new int[n];
+                for (int i = 0; i < n; i++) {
+                    arr[i] = sc.nextInt();
+                } int[] reverse = Problem7.reverseArray(arr, 0, n-1);
+                System.out.println(Arrays.toString(reverse).replace(",", "").replace("[", "").replace("]", "").trim());
             }
             case "ex8" -> {
                 String s = sc.next();
